@@ -2,7 +2,8 @@ const Shotstack = require('shotstack-sdk');
 
 const defaultClient = Shotstack.ApiClient.instance;
 const DeveloperKey = defaultClient.authentications['DeveloperKey'];
-DeveloperKey.apiKey = "여기_Shotstack_키를_넣으세요"; // 2단계에서 채울 곳!
+DeveloperKey.apiKey = "Ii71IYF3v62bXyUu96zH84RpMdaK5E1a7N9Ww2qC
+"; // 2단계에서 채울 곳!
 
 const api = new Shotstack.EditApi();
 
