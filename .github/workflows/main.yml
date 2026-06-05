@@ -16,11 +16,12 @@ jobs:
           node-version: 18
 
       - name: Install and Run
-        # 핵심: 로봇이 'my-shorts-factory' 폴더 안으로 직접 들어가서 작업을 수행합니다.
+        # 핵심: 작업 경로를 명시적으로 현재 위치(.)로 지정하여 혼란을 방지합니다.
+        working-directory: .
         run: |
-          cd my-shorts-factory
           npm install
           npm run render
+
 
 
 
