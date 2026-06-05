@@ -1,26 +1,8 @@
-name: Run Video Factory
-
-on:
-  workflow_dispatch:
-
-jobs:
-  render:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
       - name: Install and Run
-        # 핵심: 작업 경로를 명시적으로 현재 위치(.)로 지정하여 혼란을 방지합니다.
-        working-directory: .
         run: |
           npm install
           npm run render
+
 
 
 
