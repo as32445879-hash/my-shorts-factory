@@ -16,11 +16,12 @@ jobs:
           node-version: 18
 
       - name: Install and Run
-        # 핵심: 로봇이 'my-shorts-factory' 폴더 안으로 들어가서 작업하게 합니다.
+        # 핵심: 로봇이 'my-shorts-factory' 폴더 안으로 직접 들어가서 작업을 수행합니다.
         run: |
           cd my-shorts-factory
           npm install
           npm run render
+
 
 
 
