@@ -17,12 +17,8 @@ jobs:
 
       - name: Install and Run
         run: |
-          # 1. package.json이 있는 실제 위치를 찾습니다.
-          TARGET_DIR=$(find . -name "package.json" -exec dirname {} \; | head -n 1)
-          echo "Found package.json in: $TARGET_DIR"
-          
-          # 2. 해당 위치로 이동하여 작업을 수행합니다.
-          cd "$TARGET_DIR"
+          # 리포지토리 안의 my-shorts-factory 폴더로 이동합니다.
+          cd my-shorts-factory
           npm install
           npm run render
 
