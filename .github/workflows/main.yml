@@ -16,11 +16,12 @@ jobs:
           node-version: 18
 
       - name: Install and Run
-        # 여기서 로봇에게 my-shorts-factory 폴더로 이동하라고 강제 명령합니다.
+        # 핵심: 로봇이 파일이 있는 폴더 안으로 직접 들어가서 명령을 실행하게 함
         run: |
           cd my-shorts-factory
           npm install
           npm run render
+
 
 
 
