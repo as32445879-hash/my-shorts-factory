@@ -6,12 +6,11 @@ on:
 jobs:
   render:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: .
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          path: .
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -23,5 +22,6 @@ jobs:
 
       - name: Run render
         run: npm run render
+
 
 
