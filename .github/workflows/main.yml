@@ -1,0 +1,22 @@
+name: Run Video Factory
+
+on:
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 코드 가져오기
+        uses: actions/checkout@v4
+
+      - name: Node.js 설치
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: 필요한 도구 설치
+        run: npm install
+
+      - name: 영상 제작 시작
+        run: node render.js
