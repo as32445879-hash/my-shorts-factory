@@ -1,0 +1,13 @@
+{
+  "name": "my-shorts-factory",
+  "version": "1.0.0",
+  "description": "Video production factory",
+  "main": "render.js",
+  "dependencies": {
+    "remotion": "^4.0.0",
+    "@remotion/cli": "^4.0.0"
+  },
+  "scripts": {
+    "render": "remotion render"
+  }
+}
