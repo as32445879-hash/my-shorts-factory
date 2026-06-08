@@ -29,7 +29,12 @@ edit.setTimeline(timeline)
     .setOutput(output);
 
 api.postRender(edit).then((data) => {
-    console.log('영상 제작 요청 성공 ID:', data.response.id);
+    const renderId = data.response.id;
+    console.log("영상 제작 요청 성공 ID:", renderId);
+    console.log("Shotstack 내 렌더링에서 이 ID로 검색:", renderId);
 }, (error) => {
-    console.error('에러 발생:', error);
+    console.error("에러 발생 확인:", error);
 });
+
+
+
