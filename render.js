@@ -27,7 +27,7 @@ const track = new Shotstack.Track();
 track.setClips([clip]);
 
 const timeline = new Shotstack.Timeline();
-timeline.setTracks([track]);
+timeline.setTracks([track, audioTrack]);
 
 const output = new Shotstack.Output();
 output.setFormat('mp4')
