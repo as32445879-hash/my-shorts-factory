@@ -4,10 +4,9 @@
   "description": "Video production factory",
   "main": "render.js",
   "dependencies": {
-    "remotion": "^4.0.0",
-    "@remotion/cli": "^4.0.0"
+    "shotstack-sdk": "^0.2.9"
   },
   "scripts": {
-    "render": "remotion render"
+    "render": "node render.js"
   }
 }
