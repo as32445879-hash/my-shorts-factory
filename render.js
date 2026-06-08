@@ -13,7 +13,16 @@ const clip = new Shotstack.Clip();
 clip.setAsset(videoAsset)
     .setStart(0)
     .setLength(32); // 32초로 변경 완료!
+const audioAsset = new Shotstack.AudioAsset();
+audioAsset.setSrc('https://raw.githubusercontent.com/as32445879-hash/my-shorts-factory/main/music.mp3');
 
+const audioClip = new Shotstack.Clip();
+audioClip.setAsset(audioAsset)
+         .setStart(0)
+         .setLength(32);
+
+const audioTrack = new Shotstack.Track();
+audioTrack.setClips([audioClip]);
 const track = new Shotstack.Track();
 track.setClips([clip]);
 
