@@ -2,7 +2,7 @@ const Shotstack = require('shotstack-sdk');
 
 const defaultClient = Shotstack.ApiClient.instance;
 const DeveloperKey = defaultClient.authentications['DeveloperKey'];
-DeveloperKey.apiKey = "Ii71IYF3v62bXyUu96zH84RpMdaK5E1a7N9Ww2qC";
+DeveloperKey.apiKey = "Ii71IYyuS2iVgxrZZqbzGq4Z1jGWnYzpwf4f1WBI";
 defaultClient.basePath = "https://api.shotstack.io/edit/stage";
 const api = new Shotstack.EditApi();
 
