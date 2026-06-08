@@ -7,7 +7,7 @@ defaultClient.basePath = "https://api.shotstack.io/edit/stage";
 const api = new Shotstack.EditApi();
 
 const videoAsset = new Shotstack.VideoAsset();
-videoAsset.setSrc('https://shotstack-assets.s3.ap-southeast-2.amazonaws.com/examples/rain.mp4');
+videovideoAsset.setSrc('https://filesamples.com/samples/video/mp4/sample_640x360.mp4');
 
 const clip = new Shotstack.Clip();
 clip.setAsset(videoAsset)
